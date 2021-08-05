@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLOG</title>
+
+    <img src="https://croydonbid.com/sites/default/files/styles/business800x530/public/hcl_logo_blue.jpg?itok=BY8gde2c.jpg" alt="photo"  width="200" height="250"  border="02" align="left">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+	<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 1000% 1000%;
+	animation: gradient 15s ease infinite;
+	height: 1000px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+    background-position: 0% 50%;
+	}
+}
+</style>
+
+</head>
+<body>
+<nav class="navbar is-info">
+<div class="navbar-brand">
+	<a href="/" class="navbar-item"><strong>HCL BLOG</strong></a>
+	</div>
+</nav>
+
+<section class="section">
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
+</section>
+</body>
+</html>
